@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Flickr ding</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css" media="screen"charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css" charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <h1>Flickr Ding</h1>
+    </header>
+
+    <div id="main">
+      <div ng-view></div>
+    </div>
+
+    <footer>&copy; - NMCT (MIMSAAAAH)</footer>
+
+    <script src="../lib/angular/angular.js"></script> <!-- deze en de onderste niet concateneren -->
+    <script src="../lib/angular/angular-route.js"></script>
+    <script src="models/FlickrImage.js"></script>
+    <script src="app.js"></script>
+    <script src="services/flickrService.js"></script>
+    <script src="ImagesOverview/ImagesOverviewController.js"></script>
+    <script src="ImagesDetails/ImagesDetailsController.js"></script>
+  </body>
+</html>
